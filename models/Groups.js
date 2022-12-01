@@ -6,7 +6,7 @@ const GroupSchema = new mongoose.Schema({
   name: { type: String, required: true },
   members: [{ type: String }],
   events: [{ type: String }],
-  img: String,
+  img: { type: String, required: true },
   desc: { type: String, required: true },
 });
 
